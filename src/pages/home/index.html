@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Florescendo Sonhos</title>
+
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Menu -->
+    <header id="navbar">
+      <div class="container">
+        <h1>
+          <img src="../../../assets/logo/logoLotus.png" id="logo">
+        </h1>
+  
+        <nav>
+          <ul>
+            <li>
+              <a href="../home/index.html">
+                Home
+              </a>
+            </li>
+            <li><a href="../amigurumis/index.html">Receitas</a></li>
+            <li><a href="../contato/index.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-110px";
+          }
+        }
+        </script>
+    </header>
+
+    <!-- Page -->
+    <!-- Without parallax -->
+    <!-- <img class="banner" src="../../../assets/banner/bannerReceitas.png"> -->
+
+      <!-- Banner parallax -->
+        <div class="banner">
+          <h1>Amigurumis</h1>
+        </div>
+      <!-- Initial image -->
+        <main>
+        <!-- About -->
+          <section class="main">
+            <div class="main-container">
+              
+              <h2 class="main-title">
+                Sobre o projeto Florescendo Sonhos
+              </h2>
+
+              <img 
+                src="../../../assets/images/imgAbout.png" 
+                alt="Caricatura Ana"
+                class="imgAbout"
+              >
+
+              <p>
+                O projeto <strong>Florescendo Sonhos</strong> foi idealizado em 2019, com objetivo de compartilhar informações e incentivar hobbies. Em 2021 ele inicia com uma proposta diferente: compartilhar histórias de família, receitas culinárias, artesanato, vídeos de família e outros sonhos prestes a florescer.
+              </p>
+
+              <p id="mission">
+                Nossa missão é:
+                <strong>
+                    <em>
+                      "Agregar e compartilhar receitas,  técnicas e histórias de família".</em>
+                </strong> 
+              </p>
+          
+              <p>
+                Oferecemos a todos sonhos e lembranças, que ficarão eternizados e modernizados nesse site, unindo brasileiros e portugueses apaixonados por suas famílias e seu legado.
+              </p>
+            </div>
+          </section>
+          
+        <!-- First parallax -->
+          <div class="parallax"></div>
+
+        <!-- Benefits -->
+        <section class="benefits">
+          
+          <h2 class= "main-title">Seções</h2>
+          
+          <ul class="itens">
+            <li>
+              <a href="../amigurumis/index.html">
+                <h2>Receitas</h2>
+
+                <img src="../../../assets/icons/iconYarnHeart.png" id="iconReceipe"/>
+                <p class="itens-description" >Receitas escritas e em vídeo dos amigurumis 
+                  mais fofos da internet</p>
+              </a>
+            </li>
+            <li>
+              <h2>Materiais</h2>
+              <img src="../../../assets/icons/iconMaterials.png" id="iconMat"/>
+              <p class="itens-description" >Muita informação sobre linhas e acessórios para te ajudar</p>
+            </li>
+            <li>
+              <h2>Técnicas</h2>
+              <img src="../../../assets/icons/iconTechiniques.png"id="iconTecnics"/>
+              <p class="itens-description" >Técnicas para facilitar e melhorar o acabamento dos amigurumis</p>
+            </li>
+          </ul> 
+        </section>
+
+      <!-- First parallax -->
+        <div class="parallax2"></div>
+        
+      <!-- Map -->
+        <section class="map">
+          <h2 class="main-title">
+             ARTEliê
+          </h2>
+          <p>
+           Nosso ateliê está localizado no cantinho do mundo
+          </p>
+          <div class="map-container">
+            <iframe 
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.458328969226!2d-44.45036688526226!3d-19.564855486809314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa700e2918a2d51%3A0x4e443121466b29e5!2sR.%20Jo%C3%A3o%20Evangelista%20de%20Abreu%2C%2012%2C%20Fortuna%20de%20Minas%20-%20MG%2C%2035760-000%2C%20Brasil!5e0!3m2!1spt-BR!2spt!4v1616522823007!5m2!1spt-BR!2spt" 
+             width="100%" 
+             height="300px" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy">
+           </iframe>
+          </div>
+       </section>
+      </main>
+
+      <footer>
+        <img src="../../../assets/logo/lotus.White.png" alt="Logo Branco">
+        <p class="copyright">&copy; Copyright Florescendo Sonhos - 2021</p>
+      </footer>
+  </body>
+</html>

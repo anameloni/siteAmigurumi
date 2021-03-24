@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+body{
+  background: #d0faf4;
+  font-family: 'Caveat', cursive;
+  width: 100vw;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  max-width: 940px;
+  height: 100%;
+
+  margin: 0 auto;
+  margin-top: 9rem;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight:bold;
+  font-family: 'Architects Daughter', cursive;
+
+  margin: 10rem 0 0 1rem;
+  padding-bottom: 3rem;
+}
+
+.video-list {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video-list > div {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.video-list iframe {
+  max-width: 100%;
+  display: block;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contacto - Florescendo Sonhos</title>
+
+  <link rel="shortcut icon" href="../../../assets/icons/iconYarn4.png" type="image/png"/>
+
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <link rel="stylesheet" href="../../styles/footer.css">
+  <link rel="stylesheet" href="../../styles/header.css">
+  <link rel="stylesheet" href="../contato/styles.css">
+</head>
+
+<body>
+  <!-- Menu -->
+  <header>
+    <div class="container">
+      <h1>
+        <img src="../../../assets/logo/logoLotus.png" id="logo">
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../amigurumis/index.html">Receitas</a></li>
+          <li><a href="../contato/index.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page -->
+  <main class="mainContatoPage">
+    <form class="contato">
+      <label for="nameLastName">Nome e sobrenome</label>
+      <input 
+        class="input-default" 
+        type="text" 
+        id="inputNameLastName"
+        required
+      >
+
+      <label for="emailAdress">Email</label>
+      <input 
+        class="input-default" 
+        type="email" 
+        id="inputEmailAdress"
+        placeholder="seuemail@dominio.com"
+        required
+      >
+
+      <label for="whatsAppContact">whatsApp</label>
+      <input 
+        class="input-default" 
+        type="tel" 
+        id="inputwhatsAppContact"
+        placeholder="+XXX XXX XXX XXX"
+      >
+
+      <label for="msgTextarea">Mensagem</label>
+      <textarea 
+        class="input-default" 
+        id="msgTextarea" 
+        cols="70" 
+        rows="10"
+        required
+      >
+      </textarea>
+
+      <fieldset>
+        <legend>Como prefere nosso contacto?</legend>
+        <label>
+          <input 
+          id="radio-email"
+          type="radio"
+          value = "e-mail"
+          name="contact"
+          checked
+        >
+          e-mail</label>
+        
+        <label>
+          <input 
+          id="radio-whatsApp"
+          type="radio"
+          value = "whatsApp"
+          name="contact"
+        >
+          WhatsApp</label>
+        
+        <label>
+          <input 
+          id="radio-sinalDeFumaca"
+          type="radio"
+          value = "sinalDeFumaca"
+          name="contact"
+        >
+          Sinal de Fumaça</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qual o conteúdo de maior interesse para você?</legend>
+
+        <select>
+          <option>Receitas</option>
+          <option>Materiais</option>
+          <option>Técnicas</option>
+          <option>Outros</option>
+        </select>
+      </fieldset>
+ 
+      <label>
+        <input 
+          class="checkboxForm" 
+          type="checkbox"
+          checked
+        >
+        Gostaria de receber nossas novidades por e-mail?
+      </label>
+
+      <input 
+        type="submit" 
+        value="Enviar"
+        class= "inputContactSubmit"
+      >
+    </form>
+  </main>
+  
+  <footer>
+    <img src="../../../assets/logo/lotus.White.png" alt="Logo Branco">
+    <p class="copyright">&copy; Copyright Florescendo Sonhos - 2021</p>
+  </footer>
+
+</body>
+</html>

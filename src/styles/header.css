@@ -1,0 +1,53 @@
+/* Menu */
+header {
+  background: #0ED9BB;
+  display: flex;
+  
+  position: fixed; /* Set the navbar to fixed position */
+  top: -110px; /* Position the navbar at the top of the page */
+  left:0;
+  z-index: 2;
+  width: 100%; 
+}   
+
+.container {
+  position: relative;
+  max-width: 940px;
+  margin: 0 auto;
+
+  background-attachment: fixed;
+}
+
+.container nav {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+.container nav ul {
+  display: flex;
+  justify-content:center;
+}
+
+.container nav li {
+  display: inline;
+  margin: 0 0 0 1rem;
+  padding: 0.3rem;
+  font-family: 'Architects Daughter', cursive;
+}
+.container nav a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color, 0.5s;
+}
+.container nav a:hover {
+  color: #000000;
+}
+
+#logo {
+  width: 22%;
+  height: 22%;
+  border-radius: 50%;
+}
