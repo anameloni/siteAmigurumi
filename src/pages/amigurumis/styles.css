@@ -13,6 +13,17 @@ body{
   width: 100vw;
 }
 
+header {
+  background: #0ED9BB;
+  display: flex;
+  
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0px!important; /* Position the navbar at the top of the page */
+  left:0;
+  z-index: 2;
+  width: 100%; 
+}   
+
 html, body {
   height: 100%;
 }
@@ -52,4 +63,35 @@ main {
 .video-list iframe {
   max-width: 100%;
   display: block;
+}
+
+@media (max-width: 480px) {
+  html, body, main, .video-list, iframe {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  main {
+    padding-bottom: 2rem;
+    /* position: relative;
+    margin-top: 120px;
+
+    display: block; */
+  }
+  /* 
+  .main-title {
+    margin: 170px auto auto auto;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .video-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
 }

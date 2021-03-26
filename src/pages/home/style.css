@@ -58,14 +58,14 @@ main {
 
   /* background: linear-gradient(#d0faf4,#0ED9BB); */
 
-  height: 70vh;
+  height: 80vh;
 
   box-sizing: border-box;
   margin: 0 auto;
   padding: 10px;
 }
 
-.main-container{
+.main-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -172,8 +172,6 @@ p {
 
 /* Benefits */
 .benefits {
-  /* background: #ceffb2; */
-
   width: 100%;
   height: 100%;
   max-width: 992px;
@@ -232,21 +230,82 @@ p {
 .itens-description {
   font-size: 1.5rem;
 }
-/* 
-.benefits > ul {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 5%;
-  font-size:1.5rem;
-}
 
-.itens {
-  font-style: italic;
-  padding: 0.25rem;
-  margin: 20px;
-}
+@media (max-width: 480px) {
+  html, body, main, .banner, .main, .main-container, .parallax, .parallax2, .map-container, .benefits, .itens, .itens li{
+    width: auto;
+  }
 
-.img-benefits {
-  width: 50%;
-} */
+  .banner {
+    /* width: 375px; */
+    height:auto;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .main {
+    height:90vh;
+  }
+
+  .main-container {
+    position: relative;
+    padding: 1rem;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .imgAbout {
+    width:20%;
+    margin: 0 auto;
+  }
+
+  .parallax, .parallax2 {
+    height:100vh;
+  }
+
+  .benefits {
+    padding: 0px;
+  }
+
+  .itens {
+    padding: 10px;
+  }
+
+  #benefits-title {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .itens li {
+    margin: 5% 12%;
+    padding: 5%;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    font-size:1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .itens img {
+    width:25%;
+    height:auto;
+
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .itens-description {
+    font-size: 1.2rem;
+  }
+}

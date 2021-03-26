@@ -23,6 +23,7 @@ header {
   top: 40%;
   right: 0;
 }
+
 .container nav ul {
   display: flex;
   justify-content:center;
@@ -50,4 +51,48 @@ header {
   width: 22%;
   height: 22%;
   border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  header, .container {
+    width: auto;
+    top:0;
+    padding-bottom: 1.5%;
+  }
+
+  .container {
+    display:block;
+    justify-content: center;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+
+  #logo {
+    width: 40%;
+    height: auto;
+  }
+
+  .container nav {
+    position: static;
+    margin:0 auto;
+    justify-content: center;
+  }
+
+  .container nav ul {
+    display: block;
+    justify-content: center;
+    padding-inline-start: none;
+    text-align: center;
+  }
+  
+  .container nav li {
+    margin: 1rem auto;
+  }
+  
+  .container nav a {
+    font-size: 1.2rem;
+    padding:0 0.7rem;
+  }
 }
