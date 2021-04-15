@@ -76,7 +76,7 @@ header {
 
   .container nav {
     position: static;
-    margin:0 auto;
+    margin:  0 auto;
     justify-content: center;
   }
 
@@ -94,5 +94,11 @@ header {
   .container nav a {
     font-size: 1.2rem;
     padding:0 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header, .container {
+    width: 100%;
   }
 }

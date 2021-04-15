@@ -1,3 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+body{
+  background: #d0faf4;
+  font-family: 'Caveat', cursive;
+  /* width: 100vw; */
+}
+
+html, body {
+  height: 100%;
+}
+
+nav {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 1rem;
+  padding: 0.3rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  transition: color, 0.5s;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+/* PAGE */
+main {
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 9rem;
+}
+
 nav {
   position: absolute;
   top: 40%;
@@ -83,4 +133,83 @@ form fieldset {
   border: solid 2px #0ED9BB;
 
   transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+  html, body, main, .banner, .main, .main-container, .parallax, .parallax2, .map-container, .benefits, .itens, .itens li{
+    width: auto;
+  }
+
+  .banner {
+    /* width: 375px; */
+    height:auto;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .main {
+    height:90vh;
+  }
+
+  .main-container {
+    position: relative;
+    padding: 1rem;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .imgAbout {
+    width:20%;
+    margin: 0 auto;
+  }
+
+  .parallax, .parallax2 {
+    height:100vh;
+  }
+
+  .benefits {
+    padding: 0px;
+  }
+
+  .itens {
+    padding: 10px;
+  }
+
+  #benefits-title {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .itens li {
+    margin: 5% 12%;
+    padding: 5%;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    font-size:1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .itens img {
+    width:25%;
+    height:auto;
+
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .itens-description {
+    font-size: 1.2rem;
+  }
 }

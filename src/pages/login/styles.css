@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+body{
+  background: #d0faf4;
+  font-family: 'Caveat', cursive;
+  width: 100vw;
+}
+
+header {
+  background: #0ED9BB;
+  display: flex;
+  
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0px!important; /* Position the navbar at the top of the page */
+  left:0;
+  z-index: 2;
+  width: 100%; 
+}   
+
+html, body {
+  height: 100%;
+}
+
+main {
+  max-width: 940px;
+
+  margin: 0 auto;
+  margin-top: 7.3rem;
+}
+
+.btn-container {
+  text-align: right;
+  
+}
+
+.btn-new-video {
+  width: auto;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+
+  background: #0ED9BB;
+  
+  color:white;
+  font-size:1.125rem;
+  font-weight:bold;
+
+  border:none;
+  border-radius: 5%;
+
+  cursor: pointer;
+
+  transition:1s;
+}
+
+.btn-new-video:hover {
+  background: white;
+  color: #0ED9BB;
+  border: solid 2px #0ED9BB;
+
+  transform: scale(1.2);
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight:bold;
+  font-family: 'Architects Daughter', cursive;
+
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.video-list {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.item-list {
+  flex: 1 1 250px;
+  margin: 10px;
+  box-sizing: border-box;
+  margin-bottom: 4rem;
+  ;
+}
+
+.video-list label {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.video-list iframe {
+  max-width: 100%;
+  display: block;
+  padding-top: 1rem;
+  background: linear-gradient(#d0faf4,#0ED9BB)
+}
+
+@media (max-width: 480px) {
+  html, body, main, .video-list, iframe {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  main {
+    margin-top: 7.3rem;
+    padding-bottom: 2rem;
+  }
+
+  .btn-new-video {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+
+    font-size: 0.75rem;
+  }
+
+  p {
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  
+  .item-list {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
