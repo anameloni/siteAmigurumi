@@ -98,7 +98,6 @@ p {
   margin: 10px;
   box-sizing: border-box;
   margin-bottom: 4rem;
-  ;
 }
 
 .video-list label {
@@ -110,7 +109,8 @@ p {
   max-width: 100%;
   display: block;
   padding-top: 1rem;
-  background: linear-gradient(#d0faf4,#0ED9BB)
+  margin-top: 1rem;
+  background:#000000;
 }
 
 @media (max-width: 480px) {
