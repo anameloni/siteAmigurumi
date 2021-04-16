@@ -52,13 +52,11 @@ main {
   font-weight:bold;
   color: black;
 }
-
+ /* PROFILE */
 .main {
   position: relative;
 
-  /* background: linear-gradient(#d0faf4,#0ED9BB); */
-
-  height: 80vh;
+  height: 100vh;
 
   box-sizing: border-box;
   margin: 0 auto;
@@ -218,6 +216,7 @@ p {
 /* Mapa */
 .map {
   padding: 3em 0;
+  margin: 0 auto;
   height: 80vh;
   background: linear-gradient(#d0faf4, black);
 }
@@ -225,6 +224,8 @@ p {
 .map-container {
   max-width: 992px;
   margin: 0 auto;
+  text-align: center;
+  height: 80%;
   padding-bottom: 3rem;
 }
 
@@ -244,7 +245,7 @@ p {
 }
 
 .contact {
-  width: 800px;
+  /* width: 800px; */
   margin: 2rem;
   padding: 4rem;
 }
@@ -265,7 +266,7 @@ form input {
 }
 
 .input-default {
-  width: 70%;
+  width: -webkit-fill-available;
   display: block;
 
   margin: 0 0 1.25rem;
@@ -304,6 +305,218 @@ form fieldset {
   transform: scale(1.2);
 }
 
+@media (max-width: 1300px) {
+  html, body, main, .banner, .main, .main-container, .parallax, .parallax2, .map-container, .benefits, .itens, .itens li{
+    width: auto;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .banner h1 {
+    font-size: 5rem;
+  }
+
+  /* PROFILE */
+   .main {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .main-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    padding: 1rem;
+
+    max-width: 800px;
+  }
+
+  .main-title {
+    font-size: 1.7rem;
+  }
+
+  .imgAbout {
+    width:20%;
+    margin: 15px;
+  }
+
+  .main-container p {
+    font-size: 1.5rem;
+    /* text-align: left; */
+  }
+
+  /* PARALLAX */
+  .parallax, .parallax2 {
+    height:100vh;
+  }
+
+  /* SECÇÕES */
+   .benefits {
+    padding: 0px;
+  }
+
+  #benefits-title {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .itens {
+    margin: 0 2rem;
+    box-sizing: border-box;
+  }
+
+  .itens li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 80%;
+    vertical-align: top;
+    padding: 1.25rem 1.25rem;
+    margin: 0 1.5%;
+    padding: 3.2rem 1.5rem;
+    box-sizing: border-box; /* Make the width be absolute and the padding be inside it */
+    border: 2px solid #000000;
+    border-radius: 5%;
+    transition: 0.5s;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    font-size:1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .itens img {
+    width:25%;
+    height:auto;
+
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .itens-description {
+    font-size: 1.2rem;
+  }
+
+  /* MAPA */
+  .map {
+    padding: 1em 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .map-container {
+    max-width: 100%;
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .map-container iframe {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .map p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* FORM CONTACT */
+  .contact-container {
+    margin: 0 auto;
+  }
+
+  .contact {
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .inputContactSubmit {
+    width: -webkit-fill-available;
+    margin: 2rem 0;
+    box-sizing: none;
+  }
+}
+
+@media (max-width: 840px) {
+  /* SECÇÕES */
+  .benefits {
+    padding: 0px;
+  }
+
+  .itens {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #benefits-title {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .itens li {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+
+    margin: 5% 12%;
+    padding: 5%;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .itens img {
+    width:25%;
+    height:auto;
+
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .itens-description {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 480px) {
   html, body, main, .banner, .main, .main-container, .parallax, .parallax2, .map-container, .benefits, .itens, .itens li{
     width: auto;
@@ -318,11 +531,15 @@ form fieldset {
   }
 
   .main {
-    height:90vh;
+    height: 100vh;
   }
 
   .main-container {
-    position: relative;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     padding: 1rem;
   }
 
@@ -331,14 +548,19 @@ form fieldset {
   }
 
   .imgAbout {
-    width:20%;
-    margin: 0 auto;
+    width: 25%;
+    margin: 10px;
+  }
+
+  .main-container p {
+    font-size: 1.3rem;
   }
 
   .parallax, .parallax2 {
-    height:100vh;
+    height: 100vh;
   }
 
+  /* SECÇÕES */
   .benefits {
     padding: 0px;
   }
@@ -355,6 +577,7 @@ form fieldset {
   .itens li {
     margin: 5% 12%;
     padding: 5%;
+    max-width: 100%;
   }
 
   p {
@@ -365,7 +588,7 @@ form fieldset {
   }
 
   h3 {
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem;
   }
@@ -396,9 +619,9 @@ form fieldset {
   }
   
   .map-container {
-    width: 100vw;
-    margin: 0 auto;
+    margin: 0.5rem;
     padding-bottom: 1rem;
+    text-align: center;
   }
 
   .map-container iframe {
